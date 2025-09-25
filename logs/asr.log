@@ -1,1 +1,35 @@
-
+INFO:     Started server process [87888]
+INFO:     Waiting for application startup.
+正在加载模型...
+VAD模型目录已存在，跳过下载步骤
+正在从本地加载VAD模型...
+VAD模型加载完成
+正在加载ASR模型...
+funasr version: 1.2.7.
+Check update of funasr, and it would cost few times. You may disable it by set `disable_update=True` in AutoModel
+You are using the latest version of funasr-1.2.7
+Downloading Model from https://www.modelscope.cn to directory: model\asr\models\iic\speech_paraformer-large-vad-punc_asr_nat-zh-cn-16k-common-vocab8404-pytorch
+ASR模型加载完成
+正在加载标点符号模型...
+funasr version: 1.2.7.
+Check update of funasr, and it would cost few times. You may disable it by set `disable_update=True` in AutoModel
+You are using the latest version of funasr-1.2.7
+Downloading Model from https://www.modelscope.cn to directory: model\asr\models\iic\punc_ct-transformer_cn-en-common-vocab471067-large
+标点符号模型加载完成
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:1000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:58501 - "WebSocket /v1/ws/vad" [accepted]
+新的WebSocket连接
+INFO:     connection open
+音频数据形状: (50304,), 采样率: 16000
+  0%|                                                                                 | 0/1 [00:00<?, ?it/s]100%|#########################################################################| 1/1 [00:00<00:00,  1.59it/s]{'load_data': '0.000', 'extract_feat': '0.032', 'forward': '0.630', 'batch_size': '1', 'rtf': '0.202'}, : 10rtf_avg: 0.202: 100%|#########################################################| 1/1 [00:00<00:00,  1.59it/s]rtf_avg: 0.202: 100%|#########################################################| 1/1 [00:00<00:00,  1.58it/s]
+  0%|                                                                                 | 0/1 [00:00<?, ?it/s]{'load_data': 0.0, 'extract_feat': 0.0, 'forward': '0.022', 'batch_size': '1', 'rtf': '-0.022'}, : 100%|#| 1rtf_avg: -0.022: 100%|########################################################| 1/1 [00:00<00:00, 43.70it/s]rtf_avg: -0.022: 100%|########################################################| 1/1 [00:00<00:00, 41.78it/s]
+INFO:     127.0.0.1:58502 - "POST /v1/upload_audio HTTP/1.1" 200 OK
+音频数据形状: (49792,), 采样率: 16000
+  0%|                                                                                 | 0/1 [00:00<?, ?it/s]100%|#########################################################################| 1/1 [00:00<00:00,  6.31it/s]{'load_data': '0.000', 'extract_feat': '0.016', 'forward': '0.159', 'batch_size': '1', 'rtf': '0.051'}, : 10rtf_avg: 0.051: 100%|#########################################################| 1/1 [00:00<00:00,  6.31it/s]rtf_avg: 0.051: 100%|#########################################################| 1/1 [00:00<00:00,  6.23it/s]
+  0%|                                                                                 | 0/1 [00:00<?, ?it/s]{'load_data': 0.0, 'extract_feat': 0.0, 'forward': '0.015', 'batch_size': '1', 'rtf': '-0.015'}, : 100%|#| 1rtf_avg: -0.015: 100%|########################################################| 1/1 [00:00<00:00, 64.20it/s]rtf_avg: -0.015: 100%|########################################################| 1/1 [00:00<00:00, 60.34it/s]
+INFO:     127.0.0.1:58529 - "POST /v1/upload_audio HTTP/1.1" 200 OK
+音频数据形状: (31872,), 采样率: 16000
+  0%|                                                                                 | 0/1 [00:00<?, ?it/s]100%|#########################################################################| 1/1 [00:00<00:00,  2.36it/s]{'load_data': '0.000', 'extract_feat': '0.014', 'forward': '0.423', 'batch_size': '1', 'rtf': '0.214'}, : 10rtf_avg: 0.214: 100%|#########################################################| 1/1 [00:00<00:00,  2.36it/s]rtf_avg: 0.214: 100%|#########################################################| 1/1 [00:00<00:00,  2.33it/s]
+  0%|                                                                                 | 0/1 [00:00<?, ?it/s]{'load_data': 0.0, 'extract_feat': 0.0, 'forward': '0.043', 'batch_size': '1', 'rtf': '-0.043'}, : 100%|#| 1rtf_avg: -0.043: 100%|########################################################| 1/1 [00:00<00:00, 21.86it/s]rtf_avg: -0.043: 100%|########################################################| 1/1 [00:00<00:00, 21.39it/s]
+INFO:     127.0.0.1:58540 - "POST /v1/upload_audio HTTP/1.1" 200 OK

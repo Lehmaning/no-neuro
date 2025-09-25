@@ -1,1 +1,11 @@
-
+Using device: cuda
+INFO:     Started server process [97604]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:6007 (Press CTRL+C to quit)
+INFO:     127.0.0.1:58503 - "POST /classify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58504 - "POST /classify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58530 - "POST /classify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58531 - "POST /classify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58541 - "POST /classify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58542 - "POST /classify HTTP/1.1" 200 OK
